@@ -16,9 +16,11 @@ var hero_full_screen = true;                    //If true, the hero section will
 
 //HERO BACKGROUND SLIDESHOW IMAGES
 var slidehow_images = [
-    "https://via.placeholder.com/1920x1080.png",
-    "https://via.placeholder.com/1920x1080.png",
-    "https://via.placeholder.com/1920x1080.png"
+    "./images/WanderlustTech-1212.jpg",
+    "./images/WanderlustTech-1164.jpg",
+    "./images/WanderlustTech-1222.jpg",
+    "./images/WanderlustTech-1160.jpg",
+
 ];
 
 //TIMELINE PARALLAX
