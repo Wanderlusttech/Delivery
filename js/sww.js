@@ -12,9 +12,9 @@ loginButton.addEventListener("click", (e) => {
         window.location.href = './Alexa.html';
     } 
 
-    if (username === "ivy" && password === "1234") {
+    if (username === "PetuniaG" && password === "11242022") {
         
-        window.location.href = './Ivy.html';
+        window.location.href = './petunia.html';
     } 
 
    
