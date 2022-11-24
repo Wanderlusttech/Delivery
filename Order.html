@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="Content-Language" content="en">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Login TaxAce Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no">
+  <meta name="description" content="Log in Page">
+  <link rel="shortcut icon" href="./images/logo-white.png" />
+
+  <meta name="msapplication-tap-highlight" content="no">
+  <link rel="stylesheet" href="./vendors/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="./vendors/ionicons-npm/css/ionicons.css">
+    <link rel="stylesheet" href="./vendors/linearicons-master/dist/web-font/style.css">
+    <link rel="stylesheet" href="./vendors/pixeden-stroke-7-icon-master/pe-icon-7-stroke/dist/pe-icon-7-stroke.css">
+
+    <meta name="msapplication-tap-highlight" content="no">
+
+        <link rel="stylesheet" href="./vendors/ionicons-npm/css/ionicons.css">
+
+        <link rel="stylesheet" href="./vendors/linearicons-master/dist/web-font/style.css">
+
+        <link rel="stylesheet" href="./vendors/pixeden-stroke-7-icon-master/pe-icon-7-stroke/dist/pe-icon-7-stroke.css">
+
+        <link href="./styles/css/base.css" rel="stylesheet">
+
+
+        
+        <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;display=swap'>
+        <link rel='stylesheet' href='https://unicons.iconscout.com/release/v4.0.0/css/line.css'>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no">
+
+</head>
+<style>
+
+#bg-green,
+#bg-dark, 
+#bg-blue{
+	background-size: cover;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	opacity:0;
+}
+
+#bg-dark{
+	opacity:1;
+	background: linear-gradient(45deg, #010202 0%, #1b4144 50%, #3e4240 100%);
+}
+
+#bg-green{
+	background: linear-gradient(45deg, #355152 0%, #2e5077 50%, #0e0f0f 100%);
+	animation: fading 10s infinite;
+}
+
+
+
+#bg-blue{
+	background: linear-gradient(45deg, #1b2224 0%, #345a66 50%, #060707 100%);
+  animation: fading 30s infinite;
+}
+
+@keyframes fading {
+	0% {opacity: 0;}
+	50% {opacity: 1;}
+	80% {opacity: 0;}
+	100% {opacity: 0;}
+}
+
+.wrapperr{
+	position: absolute;
+    top: 10%;
+	left: 0;
+	z-index:2;
+}
+
+.wrapper{
+	position: absolute;
+	bottom: 120px;
+    top: 0%;
+	left: 50%;
+	z-index:2;
+	color: white;
+}
+
+h1{
+	font-size: 72px;
+	line-height: .57em;
+	font-weight: 900;
+	padding: 20px 0;
+	margin: 20px 0 0 -3px;
+}
+
+p {
+	font-size: 20px;
+	line-height: 1.2;
+  margin: 0;
+}
+
+
+
+
+
+.login { 
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -150px 0 0 -150px;
+	width:300px;
+	height:300px;
+}
+.login h1 { color: #fff; text-shadow: 0 0 10px rgb(243, 243, 243); letter-spacing:1px; text-align:center; }
+.login span { color: #fff; text-shadow: 0 0 10px rgba(0,0,0,0.3); letter-spacing:1px; text-align:center; }
+
+
+
+input { 
+	width: 100%; 
+	margin-bottom: 10px; 
+	background: rgba(245, 245, 245, 0.3);
+	border: none;
+	outline: none;
+	padding: 10px;
+	font-size: 13px;
+	color: #fff;
+	text-shadow: 1px 1px 1px rgb(0, 0, 0);
+	border: 1px solid rgb(255, 250, 250);
+	border-radius: 4px;
+	box-shadow: inset 0 -5px 45px rgba(255, 255, 255, 0.2), 0 1px 1px rgba(255,255,255,0.2);
+	-webkit-transition: box-shadow .5s ease;
+	-moz-transition: box-shadow .5s ease;
+	-o-transition: box-shadow .5s ease;
+	-ms-transition: box-shadow .5s ease;
+	transition: box-shadow .5s ease;
+}
+input:focus { box-shadow: inset 0 -5px 45px rgba(241, 241, 241, 0.4), 0 1px 1px rgba(255,255,255,0.2); }
+
+
+
+#login-error-msg-holder {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+#login-error-msg {
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  padding: 5px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #8a0000;
+  border: 1px solid #8a0000;
+  background-color: #e58f8f;
+  opacity: 0;
+}
+
+#error-msg-second-line {
+  display: block;
+}
+</style>
+<body>
+    <div id="page" class="page">
+        <div class="wrapper">
+            <div  class="login">
+
+                <form id="login-form" method="post">
+              <center><img src="./images/logo-white.png" width="60%"></center>
+                  <div class="">
+                    <h2>ORDER HERE</h2>
+                    
+              
+                    <div id="login-error-msg-holder">
+                    </div>
+              
+                      <div class="col-md-12">
+                          <div class="position-relative mb-3">
+                              <input  type="text" name="username" id="username-field"  placeholder="Username" class="form-control">
+                          </div>
+                      </div>
+              
+                      <div class="col-md-12">
+                          <div class="position-relative mb-3">
+                              <input type="password" name="password" id="password-field"  placeholder="Team Number" class="form-control">
+                          </div>
+                      </div>
+              
+                        <button type="submit" value="Login" id="login-form-submit" class="btn ">sign in</button>
+                    
+              
+                  </div>
+              
+                  
+              
+              </form>
+            </main>
+            </f>
+              
+              </div>
+              
+               </div>
+           <section id="main">
+               <div id="bg-dark"></div>
+               <div id="bg-green"></div>
+               <div id="bg-blue"></div>
+           </section>
+       </div>
+</body>
+<script type="text/javascript" src="./js/"></script>
+
+</html>

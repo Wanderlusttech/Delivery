@@ -17,6 +17,12 @@ loginButton.addEventListener("click", (e) => {
         window.location.href = './petunia.html';
     } 
 
+    if (username === "Miguelh11118@gmail.com" && password === "Estephanie@2022") {
+        
+        window.location.href = './Estephanie.html';
+    } 
+
+
    
     
     else {
