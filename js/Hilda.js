@@ -19,7 +19,6 @@ var slidehow_images = [
     "./images/DSC_3497.jpg",
     "./images/DSC_3456.jpg",
     "./images/DSC_9982.jpg",
-    "./images/DSC_3659.jpg",
 
 ];
 

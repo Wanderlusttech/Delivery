@@ -22,6 +22,14 @@ loginButton.addEventListener("click", (e) => {
         window.location.href = './Estephanie.html';
     } 
 
+    if (username === "Hilda" && password === "1234") {
+        
+        window.location.href = './Hilda.html';
+    } 
+    if (username === "Alejandro" && password === "Rosa123") {
+        
+        window.location.href = './Alejandro.html';
+    } 
 
    
     
