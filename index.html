@@ -1,156 +1,228 @@
 <!DOCTYPE html>
-<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
-<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	
-	<!-- Page Title -->
-	<title>Petunia's Quinceañera</title>
-	
-	<meta name="keywords" content="Order online">
-	<meta name="description" content="Petunia's Quinceañera Online Delivery">
-	<meta name="author" content="Wisely Themes">
-	
-	<!-- Mobile Meta Tag -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	
-	<!-- Fav and touch icons -->
-	<link rel="icon" href="images/fav_touch_icons/favicon.ico" sizes="any">
-	<link rel="icon" href="images/fav_touch_icons/favicon.svg" type="image/svg+xml">
-	<link rel="apple-touch-icon" href="images/logo.png">
-	<link rel="manifest" href="images/fav_touch_icons/manifest.json">
-	
-	<!-- IE6-8 support of HTML5 elements -->
-	<!--[if lt IE 9]>
-	  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script> 
-	<![endif]-->
-	
-	<!-- Google Web Fonts -->
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
-	
-	<!-- Bootstrap CSS -->
-	<link href="css/bootstrap.min.css" rel="stylesheet" />
-	
-	<!-- FontAwesome CSS -->
-	<link href="css/fontawesome-all.min.css" rel="stylesheet" />
-	
-	<!-- Neela Icon Set CSS -->
-	<link href="css/neela-icon-set.css" rel="stylesheet" />
-	
-	<!-- Owl Carousel CSS -->
-	<link href="css/owl.carousel.min.css" rel="stylesheet" />
-	
-	<!-- Template CSS -->
-	<link href="css/style.css" rel="stylesheet" />
-	
-	<!-- Modernizr JS -->
-	<script src="js/modernizr-3.6.0.min.js"></script>
-    
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="Content-Language" content="en">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <title>Login Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no">
+  <meta name="description" content="WanderlsutTech Page Delivery">
+  <link rel="shortcut icon" href="./images/logo-white.png" />
+
+  <meta name="msapplication-tap-highlight" content="no">
+  <link rel="stylesheet" href="./vendors/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="./vendors/ionicons-npm/css/ionicons.css">
+    <link rel="stylesheet" href="./vendors/linearicons-master/dist/web-font/style.css">
+    <link rel="stylesheet" href="./vendors/pixeden-stroke-7-icon-master/pe-icon-7-stroke/dist/pe-icon-7-stroke.css">
+
+    <meta name="msapplication-tap-highlight" content="no">
+
+        <link rel="stylesheet" href="./vendors/ionicons-npm/css/ionicons.css">
+
+        <link rel="stylesheet" href="./vendors/linearicons-master/dist/web-font/style.css">
+
+        <link rel="stylesheet" href="./vendors/pixeden-stroke-7-icon-master/pe-icon-7-stroke/dist/pe-icon-7-stroke.css">
+
+        <link href="./styles/css/base.css" rel="stylesheet">
+
+
+        
+        <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;display=swap'>
+        <link rel='stylesheet' href='https://unicons.iconscout.com/release/v4.0.0/css/line.css'>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no">
+
 </head>
+<style>
+
+#bg-green,
+#bg-dark, 
+#bg-blue{
+	background-size: cover;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	opacity:0;
+}
+
+#bg-dark{
+	opacity:1;
+	background: linear-gradient(45deg, #272a2c 0%, #213b52 50%, #000d18 100%);
+}
+
+#bg-green{
+	background: linear-gradient(45deg, #35383b 0%, #757e88 50%, #031a35 100%);
+	animation: fading 10s infinite;
+}
+
+
+
+#bg-blue{
+	background: linear-gradient(45deg, #1a1a1a 0%, #233644 50%, #010e1a 100%);
+  animation: fading 30s infinite;
+}
+
+@keyframes fading {
+	0% {opacity: 0;}
+	50% {opacity: 1;}
+	80% {opacity: 0;}
+	100% {opacity: 0;}
+}
+
+.wrapperr{
+	position: absolute;
+    top: 10%;
+	left: 0;
+	z-index:2;
+}
+
+.wrapper{
+	position: absolute;
+	bottom: 50%;
+    top: 0%;
+	left: 50%;
+	z-index:2;
+	color: white;
+}
+
+h1{
+	font-size: 72px;
+	line-height: .57em;
+	font-weight: 900;
+	padding: 20px 0;
+	margin: 20px 0 0 -3px;
+}
+
+p {
+	font-size: 20px;
+	line-height: 1.2;
+  margin: 0;
+}
+
+
+
+
+
+.login { 
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -150px 0 0 -150px;
+	width:300px;
+	height:300px;
+}
+.login h1 { color: #fff; text-shadow: 0 0 10px rgb(243, 243, 243); letter-spacing:1px; text-align:center; }
+.login span { color: #fff; text-shadow: 0 0 10px rgba(0,0,0,0.3); letter-spacing:1px; text-align:center; }
+
+
+
+input { 
+	width: 100%; 
+	margin-bottom: 10px; 
+	background: rgba(245, 245, 245, 0.3);
+	border: none;
+	outline: none;
+	padding: 10px;
+	font-size: 13px;
+	color: #fff;
+	text-shadow: 1px 1px 1px rgb(0, 0, 0);
+	border: 1px solid rgb(255, 250, 250);
+	border-radius: 4px;
+	box-shadow: inset 0 -5px 45px rgba(255, 255, 255, 0.2), 0 1px 1px rgba(255,255,255,0.2);
+	-webkit-transition: box-shadow .5s ease;
+	-moz-transition: box-shadow .5s ease;
+	-o-transition: box-shadow .5s ease;
+	-ms-transition: box-shadow .5s ease;
+	transition: box-shadow .5s ease;
+}
+input:focus { box-shadow: inset 0 -5px 45px rgba(241, 241, 241, 0.4), 0 1px 1px rgba(255,255,255,0.2); }
+
+
+
+#login-error-msg-holder {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
+#login-error-msg {
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  padding: 5px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #8a0000;
+  border: 1px solid #8a0000;
+  background-color: #e58f8f;
+  opacity: 0;
+}
+
+#error-msg-second-line {
+  display: block;
+}
+</style>
 <body>
 
-	<!-- BEGIN PRELOADER -->
-	<div id="preloader">
-		<div class="loading-heart">
-			<svg viewBox="0 0 512 512" width="100">
-				<path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" />
-			</svg>
-			<div class="preloader-title">
-				Petunia Gonxales<br>
-				<small>Quinceañera</small><br>
-				
-			</div>
-		</div>
-	</div>
-	<!-- END PRELOADER -->
+        <div class="wrapper">
+            <div  class="login">
 
+                <form id="login-form" method="post">
+              <center><img src="./images/logo-white.png" width="60%"></center>
+                  <div class="">
+                    <h1>Sign In</h1>
+                    
+              
+                    <div id="login-error-msg-holder">
+                      <p id="login-error-msg">Invalid username <span id="error-msg-second-line">and/or password</span></p>
+                    </div>
+              
+                      <div class="col-md-12">
+                          <div class="position-relative mb-3">
+							Email
+                              <input  type="text" name="username" id="username-field"  placeholder="Username" class="form-control">
+                          </div>
+                      </div>
+              
+                      <div class="col-md-12">
+                          <div class="position-relative mb-3">
+							Password
+                              <input type="password" name="password" id="password-field"  placeholder="Password" class="form-control">
+                          </div>
+                      </div>
+					  <br><br>
+              
+                        <button type="submit" value="Login" id="login-form-submit" class="btn ">Sign In</button> <br><br>
+						<a style="color: white; margin-left: 80%; cursor: pointer;" href="Singup.html">Sign Up</a>
 
-	<!-- BEGIN WRAPPER -->
-	<div id="wrapper">
-	
-		<!-- BEGIN HEADER -->
-		<header id="header">
-			<div class="nav-section light no-menu">
-				<div class="container">
-					<div class="row">
-						<div class="col-sm-12">
-							<a href="index.html" class="nav-logo"><img src="images/logo-white.png" alt="WanderlustTech" /></a>
-							
-						
-							
-						</div>
-					</div>
-				</div>
-			</div>
-		</header>
-		<!-- END HEADER -->
-		
-		
-		<!-- BEGIN HERO SECTION -->
-		<section id="hero" class="bg-slideshow">
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-12">
-					
-						<div class="hero-wrapper v-center x-pad">
-							<h2 data-animation-direction="fade" data-animation-delay="600"></h2>
-							
-							<h1 class="hero-title light ">
-								<span data-animation-direction="from-right" data-animation-delay="300">Petunia Gonxales</span>
-								<small data-animation-direction="from-top" data-animation-delay="300">Quinceañera</small> 
-								<span data-animation-direction="from-left" data-animation-delay="300"></span>
-							</h1>
-							
-							<div class="hero-subtitle light" data-animation-direction="fade" data-animation-delay="1000">SEPT <span>24</span> 2022</div>
-
-                            <a href="https://www.dropbox.com/sh/8s8qsg2lc1tzibi/AADnLmVmXuAYGDSQ9udfKA-Na?dl=0" class="btn btn-light">Album</a>
-                            <br>
-                            <a href="#" class="btn btn-light">Print Order</a>
-
-
-						</div>
-						
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- END HERO SECTION -->
-		
-		
-		
-		<!-- END FOOTER -->
-		
-	</div>
-	<!-- END WRAPPER -->
-	
-	
-	<!-- Google Maps API and Map Richmarker Library -->
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBHOXsTqoSDPQ5eC5TChvgOf3pAVGapYog"></script>
-	<script src="js/richmarker.js"></script>
-	
-	<!-- Libs -->
-	<script src="js/jquery-3.6.0.min.js"></script>
-	<script src="js/jquery-ui.min.js"></script>
-	<script src="js/jquery-migrate-3.3.2.min.js"></script>
-	<script src="js/bootstrap.bundle.min.js"></script>
-	<script src="js/jquery.placeholder.min.js"></script>
-	<script src="js/ismobile.js"></script>
-	<script src="js/retina.min.js"></script>
-	<script src="js/waypoints.min.js"></script>
-	<script src="js/waypoints-sticky.min.js"></script>
-	<script src="js/owl.carousel.min.js"></script>
-	<script src="js/lightbox.min.js"></script>
+                    
+              
+                  </div>
+              
+                  
+              
+              </form>
+            </main>
+            </f>
+              
+              </div>
+              
+               </div>
+           <section id="main">
+               <div id="bg-dark"></div>
+               <div id="bg-green"></div>
+               <div id="bg-blue"></div>
+           </section>
     
-    <!-- Nicescroll script to handle gallery section touch slide -->
-	<script src="js/jquery.nicescroll.js"></script>
-    
-    <!-- Hero Background Slideshow Script -->
-	<script src="js/jquery.zoomslider.js"></script>
-	
-	<!-- Template Scripts -->
-	<script src="js/variables.js"></script>
-	<script src="js/scripts.js"></script>
 </body>
+<script type="text/javascript" src="./js/sww.js"></script>
+
 </html>
