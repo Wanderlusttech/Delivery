@@ -30,6 +30,11 @@ loginButton.addEventListener("click", (e) => {
         
         window.location.href = './Alejandro.html';
     } 
+    if (username === "Edna" && password === "Edna123") {
+        
+        window.location.href = './Edna.html';
+    } 
+
 
    
     
