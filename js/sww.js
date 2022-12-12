@@ -35,7 +35,10 @@ loginButton.addEventListener("click", (e) => {
         window.location.href = './Edna.html';
     } 
 
-
+    if (username === "Danielle" && password === "Fall2020") {
+        
+        window.location.href = './Danielle.html';
+    }
    
     
     else {
