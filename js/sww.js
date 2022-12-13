@@ -7,7 +7,7 @@ loginButton.addEventListener("click", (e) => {
     const username = loginForm.username.value;
     const password = loginForm.password.value;
 
-    if (username === "nat" && password === "1234") {
+    if (username === "Alexa" && password === "1212") {
         
         window.location.href = './Alexa.html';
     } 
@@ -34,7 +34,6 @@ loginButton.addEventListener("click", (e) => {
         
         window.location.href = './Edna.html';
     } 
-
     if (username === "Danielle" && password === "Fall2020") {
         
         window.location.href = './Danielle.html';
