@@ -7,7 +7,7 @@ loginButton.addEventListener("click", (e) => {
     const username = loginForm.username.value;
     const password = loginForm.password.value;
 
-    if (username === "nat" && password === "1234") {
+    if (username === "Alexa" && password === "1212") {
         
         window.location.href = './Alexa.html';
     } 
@@ -30,7 +30,23 @@ loginButton.addEventListener("click", (e) => {
         
         window.location.href = './Alejandro.html';
     } 
+    if (username === "Edna" && password === "Edna123") {
+        
+        window.location.href = './Edna.html';
+    } 
+    if (username === "Danielle" && password === "Fall2020") {
+        
+        window.location.href = './Danielle.html';
+    }
 
+    if (username === "Pfranco87" && password === "Julisaj5*") {
+        
+        window.location.href = './Precilla.html';
+    }
+    if (username === "Jazzymerlos" && password === "Jazzlene07$*") {
+        
+        window.location.href = '#';
+    }
    
     
     else {
