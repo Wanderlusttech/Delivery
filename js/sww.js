@@ -43,7 +43,7 @@ loginButton.addEventListener("click", (e) => {
         
         window.location.href = './Precilla.html';
     }
-    if (username === "Jazzymerlos" && password === "Jazzlene07$*") {
+    if (username === "Jazzymerlos" && password === "Jazzlene07$") {
         
         window.location.href = './Jazzy.html';
     }
